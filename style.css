@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
-    outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+.container { 
     margin: 0 auto;
     width: 100%;
     max-width: 1140px;
@@ -38,6 +37,8 @@ header span {
 .main-section .wrapper {
     display: flex;
     align-items: center;
+}
+    
 .text-wrapper {
     max-width: 425px;
 }
@@ -62,10 +63,10 @@ header span {
     padding: 100px 0;
 }
 
-    .about-section-wrapper{
+    .about-section .wrapper{
     display: flex;
-        flex-direction: column;
-        gap: 60px;
+    flex-direction: column;
+    gap: 60px;
     }
 
 select {
@@ -82,12 +83,14 @@ select {
 
 select:hover,
 .text-field:hover {
-    /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+    cursor: pointer;
+    border: 1px solid #2965F1;
 }
 
 
 .info-wrapper {
-    /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+    display: flex;
+    justify-content: space-between  ;
 }
 
 .section-title {
@@ -103,7 +106,9 @@ select:hover,
 
 .frameworks-list,
 .books-list {
-    /* 📍 Свойства flexbox для отступов между элементами в списках */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .frameworks-list {
@@ -113,11 +118,16 @@ select:hover,
 }
 
 .skills-block {
-    /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
 }
 
 .skills {
-    /* 📍 Свойства flexbox для расположения элементов с классом .label */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 .books-list {
@@ -159,7 +169,8 @@ form {
 }
 
 .btn:hover {
-    /* 📍 Стили для кнопки при наведении курсора */
+    cursor: pointer;
+    background-color: #2965F1E5;
 }
 
 .line {
@@ -181,7 +192,7 @@ th, td {
 footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
-    /* 📍 Свойство для расположения ссылки горизонтально по центру */
+    text-align: center;
 }
 
 .footer-link {
@@ -192,5 +203,5 @@ footer {
 }
 
 .footer-link:hover {
-    /* 📍 Стили для ссылки при наведении курсора */
+    text-decoration: underline 1px solid #2965F1;
 }
