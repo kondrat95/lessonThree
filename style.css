@@ -34,6 +34,11 @@ header span {
     justify-content: center;
 }
 
+.main-section {
+    display: flex;
+    align-items: center;
+}
+
 .main-section .wrapper {
     display: flex;
     align-items: center;
